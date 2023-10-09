@@ -14,7 +14,7 @@ const https = require('https')
  * Get port from environment and store in Express.
  */
 require('dotenv').config();
-const port = process.env.PORT || 3000
+const port = normalizePort(process.env.PORT || '3000')
 app.set('port', port)
 
 /**
