@@ -13,15 +13,15 @@ const http = require('http')
 /**
  * Get port from environment and store in Express.
  */
-
+//require('dotenv').config();
 const port = normalizePort(process.env.PORT || '3000')
 app.set('port', port)
 
 /**
  * Create HTTP server.
  */
+const server = http.createServer(app);
 
-const server = http.createServer(app)
 
 /**
  * Listen on provided port, on all network interfaces.
