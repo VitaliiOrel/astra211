@@ -8,7 +8,7 @@ const app = require('./app')
 const debug = require('debug')(
   'template-express-live-reload:server',
 )
-const https = require('https')
+const http = require('http')
 
 /**
  * Get port from environment and store in Express.
