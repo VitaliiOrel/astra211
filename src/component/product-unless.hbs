@@ -1,0 +1,8 @@
+{{#with product}}
+<img src={{img}} alt={{name}} width="300" height="300">
+<p>{{desc}}</p>
+<span>Ціна: {{cost}} грн.</span>
+{{#unless isAvailable}}
+<span>Немає в наявності <button>Замовити</button></span>
+{{/unless}}
+{{/with}}
