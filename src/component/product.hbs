@@ -1,6 +1,18 @@
 <div>
-    <img src={{product.img}} alt={{product.name}} width="300" height="300">
+    {{!-- <img src={{product.img}} alt={{product.name}} width="300" height="300">
     <p>{{product.desc}}</p>
     <span>Ціна: {{product.cost}} грн.</span>
+    <button>Купити</button> --}}
+
+    {{#with product}}
+    <img src={{img}} alt={{name}} width="300" height="300">
+    <p>{{desc}}</p>
+    <span>Ціна: {{cost}} грн.</span>
+    {{#if isAvailable}}
     <button>Купити</button>
+    {{else}}
+    <span>Немає в наявності <button>Замовити</button></span>
+    {{/if}}
+    {{/with}}
+
 </div>
