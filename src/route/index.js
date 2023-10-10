@@ -15,7 +15,7 @@ router.get('/ex1', function (req, res) {
     product: {
       name: 'Корм для риб',
       cost: 72.5,
-      img: 'fish.png',
+      img: 'http://datalog.store/public/fish.png',
     },
   })
 })
